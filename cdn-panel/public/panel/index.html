@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <div class="upload-container">
+    <i class="fa-solid fa-cloud-arrow-up"></i>
+    <h2>Upload a File</h2>
+
+    <label class="drop-area" id="drop-area">
+      <p>Click or drag files here</p>
+      <p id="file-size-info">Uploads up to 500MB</p>
+      <input type="file" id="fileElem" multiple/>
+    </label>
+
+    <button id="uploadBtn">Upload</button>
+
+    <div id="progress">
+      <div id="progress-bar"></div>
+    </div>
+
+    <div id="download-link" style="display: none;">
+      <a href="#" id="download-url" target="_blank" rel="noopener noreferrer">
+        <!-- Text set by JS -->
+      </a>
+    </div>
+  </div>
+
+  <div class="listing-container">
+    <!-- Downloads will be inserted here -->
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+i.fa-solid {
+  font-size: 4rem;
+  color: #3182ce;
+}
+
+.upload-container {
+  margin: 0 1rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.drop-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  border: 2px dashed #cbd5e0;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: #f9fafb;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 1rem;
+  flex-direction: column;
+}
+
+.drop-area:hover {
+  background-color: #edf2f7;
+}
+
+.drop-area input {
+  display: none;
+}
+
+.drop-area p {
+  margin: 0;
+  color: #4a5568;
+  font-size: 1rem;
+  white-space: normal;
+  overflow: hidden;
+  max-height: 6em;
+  line-height: 1.8em;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #3182ce;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #2b6cb0;
+}
+
+#progress {
+  margin-top: 1rem;
+  height: 10px;
+  width: 100%;
+  background: #e2e8f0;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+}
+
+#progress-bar {
+  height: 100%;
+  background: #38b2ac;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+#download-link {
+  margin-top: 1rem;
+  text-align: center;
+  /* You can optionally add font-size, color, or font-weight here if you want */
+}
+
+#download-link a {
+  color: #3182ce;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#download-link a:hover {
+  color: #2b6cb0;
+  text-decoration: underline;
+}
+
+.listing-container {
+  margin: 0 1rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+
+  max-height: 40rem;         /* Cap the height */
+  overflow-y: auto;          /* Enable vertical scrolling */
+  scrollbar-width: thin;     /* (optional) thinner scrollbar for Firefox */
+}
